@@ -1,0 +1,42 @@
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Form1.resources
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Properties.Resources.resources
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Form1.resources
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Properties.Resources.resources
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\Projects\WindowsFormsApplication11\WindowsFormsApplication2\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\12.10.2016 Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+F:\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\12.10.2016 Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Form1.resources
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Properties.Resources.resources
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+D:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+D:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Form1.resources
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Properties.Resources.resources
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\12.10.2016 Çalışmaları\Listbox ozellikleri\WindowsFormsApplication2\obj\x86\Debug\GenerateResource.write.1.tlog

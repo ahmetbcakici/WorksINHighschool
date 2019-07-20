@@ -1,0 +1,13 @@
+create database sirket;
+use sirket;
+create table personel(p_id int identity(1,1)primary key,p_adi varchar(20),p_soyadi varchar(20),p_gorevi varchar(30),maas decimal(7,2));
+
+select *from personel where p_gorevi = 'Mühendis' and maas < 3000;--Soru1//3000'den az maaþa sahip mühendisleri listele.
+select p_adi+' '+p_soyadi as [Ad Soyad] from personel where p_adi = 'Ayþe' and maas < 1500 and p_gorevi = 'Sekreter'--Soru2 Adý Ayþe olan maaþý 1500'den az olan sekreterlerin adýný soyadýný birleþtirerek listeleyiniz.
+select p_gorevi from personel where p_id >=	2 and p_id <= 5;--Soru3//Personel numarasý 2 ile 5 arasýnda olan personellerin görevlerini listeleyiniz.
+update personel set maas += maas*25/100 where maas >=1000 and maas <= 2000;--Soru4//Personel numarasý 2 ile 5 arasýnda olan personellerin görevlerini listeleyiniz.
+select *from personel where p_gorevi <> 'Mühendis' and p_gorevi <> 'Tekniker';--Soru5//Görevi mühendis ve tekniker olmayan kiþileri listeleyin.
+select *from personel where maas < 2000 and p_gorevi = 'Tekniker';--Soru6//Maaþý 2000'den az olan kiþileri ve tekniker personellerini listeleyiniz.
+update personel set maas -= maas*25/100 where maas > 2000 and p_gorevi <> 'Sekreter'--Soru7//Maaþý 2000'den fazla olan görevi sekreter olmayan personellerin maaþlarýný %25 azaltan sorguyu yazýnýz.
+select p_adi+' '+p_soyadi as [Ad Soyad] from personel where (maas < 2000 or maas >= 3000) and p_gorevi = 'Mühendis'--Soru8//Maaþý 2000'den az 3000 ve 3000'den fazla olan mühendislerin adýný ve soyadýný birleþtirerek listeleyin. 
+select *from personel

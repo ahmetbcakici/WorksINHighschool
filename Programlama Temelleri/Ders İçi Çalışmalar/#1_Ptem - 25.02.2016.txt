@@ -1,0 +1,83 @@
+int kenar1,kenar2,kenar3;
+            Console.Write("1. Kenar gir:");
+            kenar1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. Kenar gir:");
+            kenar2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("3. Kenar gir:");
+            kenar3 = Convert.ToInt32(Console.ReadLine());
+            
+            if (kenar1 == kenar2 && kenar1 == kenar2)
+                Console.WriteLine("eþkenar üçgen");
+            else if (kenar1 != kenar2 && kenar2 != kenar3 && kenar3 != kenar1)
+                Console.WriteLine("çeþit kenar üçgen");
+            else
+                Console.WriteLine("ikiz kenar üçgen ");
+            Console.ReadKey();
+
+----SAYI CIFTMI TEK MI MOD KULLANARAK %
+
+Console.Write("Sayý gir: ");
+            int sayý = Convert.ToInt32(Console.ReadLine());
+            if (sayý < 0)
+                Console.Write("Girdiðiniz sayý hatalý");
+            else if ((sayý % 2) == 0)
+                Console.Write("Girdiðiniz sayý çift");
+            else if ((sayý % 2) == 1)
+                Console.Write("Girdiðiniz sayý tek");
+            Console.ReadKey();
+
+--------ASKER ORNEGI
+int yas;
+            string cinsiyet;
+            Console.Write("Cinsiyetinizi giriniz: ");
+            cinsiyet = (Console.ReadLine());
+            if (cinsiyet == "Erkek" || cinsiyet == "erkek" || cinsiyet == "ERKEK")
+            {
+                Console.Write("Yaþýnýzý giriniz: ");
+                yas = Convert.ToInt32(Console.ReadLine());
+                if (yas >= 18)                
+                    Console.Write("Askere gidebilirsiniz");                
+                else                
+                    Console.Write("Askere gidemezsiniz");                
+            }
+            else
+                Console.Write("Askere gidemezsiniz");           
+            Console.ReadKey();
+----            
+            Console.Write("Kullanýcý adý giriniz");
+            string id = (Console.ReadLine());
+            if (id == "ProgTem")
+            {
+                Console.Write("Þifre giriniz: ");
+                int pw = Convert.ToInt32(Console.ReadLine());
+                if (pw == 1234)
+                {
+                    Console.Write("Baþarýyla giriþ yaptýnýz");
+                }
+                else
+                {
+                    Console.Write("Þifre yanlýþ");
+                }
+            }
+            else
+            {
+                Console.Write("Kullanýcý adý yanlýþ girdiniz");
+            }
+            Console.ReadKey();
+
+---------
+            int s1, s2;
+                Console.Write("1. Sayýyý girin: ");
+            s1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("2.Sayýyý girin: ");
+            s2 = Convert.ToInt32(Console.ReadLine());
+            if (s1 > 0 && s2 > 0)
+            {
+                if (s1 >= s2)                
+                    Console.Write("Sonuç {0}", s1 / s2);                
+                else                
+                    Console.Write("Sonuç {0}", s2 / s1);             
+            }
+            else
+                Console.Write("Pozitif sayý giriniz");
+            Console.ReadKey();

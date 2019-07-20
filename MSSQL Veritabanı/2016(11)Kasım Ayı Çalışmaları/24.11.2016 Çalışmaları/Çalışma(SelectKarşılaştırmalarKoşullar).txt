@@ -1,0 +1,9 @@
+select*from personel where ad='mehmet'--//Personel tablosundaki isimi Mehmet olanları listele.
+select ad,soyad,sınıf from ogrenci where sınıf='11A' and cinsiyet='K'--//11A sınıfındaki kızların ad,soyadı,sınıfını listele.
+select*from okul where sınıf='11B' or cins='E'--//Okuldaki 11Bsınıfındaki herkesi ve okuldaki tüm erkekleri listele.
+select*from ogrenci where ders='veritabanı' and sinif='11A' and not>=50--//Ogrenci tablosunda 11A sınıfındaki öğrencilerin veritabanı dersinden 50 ve üstü alanları listele
+select*from ogrenci where dyeri='İstanbul' and (sinif='10A' or sinif='10B')--//Ogrenci tablosunda sınıfı 10A veya 10B olanlardan İstanbulluları listele.
+select*from ogrenci where(sinif='10A' or sinif='10B')and (dyeri='İstanbul' or dyeri='Ankara')--//10A 10B sınıfında olanlardan İstanbul ve Ankaralıları listele.
+select*from ogrenci notu>=50 and notu<=70--//Ogrencilerden notu 50 ile 70 arasında olanları listele.
+select*from ogrenci vize<45 or vize>90--//Ogrenciden vize notu 45'ten küçük ve 90'dan büyükleri listele.
+select*from personel where maas>2500 and (calisma >=25 and saat <=30)--//Maaşları 2500'den büyük olan haftalık saati 25 ile 30 arası listele.

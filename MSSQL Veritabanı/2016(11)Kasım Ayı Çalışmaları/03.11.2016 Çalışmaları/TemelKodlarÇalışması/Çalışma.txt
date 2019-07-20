@@ -1,0 +1,37 @@
+BÝR ÖRNEK
+{
+	create database kutuphane;
+	use kutuphane;
+	create table kitap(
+		kitapno int identity(1,1)primary key,
+		kitapad varchar(30) not null,
+		kitapyazarad varchar(30) not null,
+		basimyili date not null,
+		sayfasayisi smallint not null,
+		fiyat smallmoney not null
+	);
+	create table musteri(
+		musterino int identity(1,1)primary key,
+		musteriad varchar(25),
+		musterisoyad varchar(30),s
+		musteritel char(10),
+		musteriadres varchar(30)
+	);
+	create table satis(
+		satisno int identity(1,1)primary key,
+		kno int,
+		mno int,
+		adet int,
+		tarih date,
+		fiyat decimal(7,2),
+		constraint fk_kitap foreign key (kno) references kitap(kitapno),
+		constraint fk_musteri foreign key (mno) references musteri(musterino)
+	);
+		insert into satis (kno,mno,adet,tarih,fiyat) values (1,1,5,'2016.10.10',50);
+		insert into kitap(kitapad,kitapyazarad,basimyili,sayfasayisi,fiyat) values ('Olasýlýksýz','Adam Fawer','2016.11.04',350,25),('Abcd','Olaw Dsro','2000.10.22',650,50),('Antremanlarla Matematik1','Esenler','2014.05.24',200,20),('Abcd Defg','Anonim','2010.12.31',250,50);--Soru3
+		insert into musteri(musteriad,musterisoyad,musteritel,musteriadres)values('Ahmet','Çakýcý','5385626692','Ýstanbul'),('Kerem','Oðuz','5355553322','Ankara'),('Orhan','Çakýr','5359993322','Ýstanbul'),('Resul','Çelik','5385329922','Ýstanbul');--Soru3
+		alter table musteri add tckimlik char(11),dogumtarihi date;--Soru4
+		alter table musteri alter column musteriadres varchar(100);--Soru5
+		alter table musteri drop column dogumtarihi;--Soru6
+		alter table kitap alter column fiyat decimal(7,2);
+}

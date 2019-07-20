@@ -1,0 +1,44 @@
+create database sirket;
+use sirket;
+
+--Soru1//Personel tablosunu oluþtur(ad,soyad,görev alanlarý boþ geçilemez)
+create table personel(pno int identity(1,1)primary key,pad varchar(20) not null,psoyad varchar(20) not null,gorev varchar(15) not null,maas decimal(7,2),prim smallint,cinsiyet char(5),dogumtarihi date,isebaslamatarihi date,dogumyeri varchar(15));
+
+--Soru2//10 veri giriþi yap.
+insert into personel values ('Ahmet','Çakýcý','Personel Þefi',2500,100,'Erkek','1990.12.21','2015.06.15','Ýstanbul'),('Gökhan','Erol','Mühendis',2000,50,'Erkek','1995.02.22','2015.07.12','Ankara'),('Sefa','Er','Tekniker',1500,100,'Erkek','1992.06.12','2015.11.20','Ýzmir'),('Ayþe','Gül','Sekreter',1500,50,'Kadýn','1985.01.10','2016.01.10','Ýzmir'),('Doðukan','Sabah','Tekniker',1750,100,'Erkek','1988.10.29','2015.12.01','Ankara'),('Kerem','Aslan','Mühendis',3000,150,'Erkek','1993.02.15','2015.08.10','Ýstanbul'),('Doðukan','Bakan','Tekniker',2000,150,'Erkek','1983.02.20','2014.05.12','Ankara'),('Þule','Sevgi','Personel Þefi',3500,150,'Kadýn','1992.07.11','2015.04.13','Ankara'),('Tuðba','Demir','Sekreter',1000,50,'Kadýn','1989.06.19','2015.02.25','Ýzmir'),('Rýza','Aksoy','Tekniker',3000,150,'Erkek','1981.05.05','2014.01.01','Ankara'),('Mehmet','Bakýr','Mühendis',1750,50,'Erkek','1985.10.05','2016.01.01','Ýzmir'),('Baran','Elyaz','Tekniker',1500,50,'Erkek','1992.09.05','2016.02.01','Ankara'),('Emirhan','Öztürk','Mühendis',2000,100,'Erkek','1991.01.20','2016.02.01','Ýstanbul'),('Esra','Özdemir','Sekreter',1000,50,'Kadýn','1987.03.10','2016.01.01','Ýstanbul'),('Ýrem','Deniz','Sekreter',1000,50,'Kadýn','1993.05.30','2016.02.15','Ankara'),('Erkan','Maðara','Personel Þefi',3500,200,'Erkek','1985.05.30','2014.05.15','Ýstanbul'),('Ýbrahim','Gençdoðmuþ','Mühendis',1750,50,'Erkek','1990.01.01','2016.03.05','Ýzmir'),('Yusuf','Arslan','Mühendis',2500,100,'Erkek','1987.02.15','2016.03.11','Ýstanbul');
+
+--Soru3//Personel tablosunda ad,soyad,görev alanlarý birleþtirilerek tek bir satýrda gösteriniz takma ad personel bilgileri olsun.
+select pad+' '+psoyad+' '+gorev as [Personel Bilgileri] from personel
+
+--Soru4//Maaþý 2000'den az ve 2016'da iþe baþlayanlarý listeleyin.
+select * from personel where maas < 2000 and isebaslamatarihi >= '2016.01.01'
+
+--Soru5//1980 ile 2000 tarihleri arasýnda doðan bayan personelleri listele.
+select * from personel where cinsiyet = 'Kadýn' and (dogumtarihi >= '1980.01.01' and dogumtarihi <= '2000.01.01')
+
+--Soru6//Maaþý 3000 ve 3000 den az olan mühendis,erkek ve teknikerleri listele.
+select * from personel where maas <= 3000 and (gorev = 'Mühendis' or gorev = 'Tekniker' or cinsiyet = 'Erkek')
+
+--Soru7//100TL'den fazla prim alan sekretelerden Ýzmir ve Ankara doðumlu olanlarýn primi %10 arttýr.
+update personel set prim += prim * 0.10 where prim > 100 and gorev = 'Sekreter' and (dogumyeri = 'Ankara' or dogumyeri = 'Ýzmir')
+
+--Soru8//Maaþý 1000'den az olan veya görevi sekreter olmayanlarý listele.
+select * from personel where maas < 1000 or gorev != 'Sekreter'
+
+--Soru9//2013 ve 2016'da iþe baþlayan,maaþý 1000 ile 2500 arasýnda olmayan erkek personelleri listele.
+select * from personel where ((isebaslamatarihi >= '2013.01.01' and isebaslamatarihi <= '2013.12.31') or (isebaslamatarihi >= '2016.01.01' and isebaslamatarihi <= '2016.12.31')) and (maas <= 1000 or maas >= 2500) and cinsiyet = 'Erkek'
+
+--Soru10//2012,2014,2016 yýllarýnda iþe baþlamýþ erkek ve personel þeflerini listeleyin(between ve in kullan)
+select * from personel where ((isebaslamatarihi between '2012.01.01' and '2012.12.31') or (isebaslamatarihi between '2014.01.01' and '2014.12.31') or (isebaslamatarihi between '2016.01.01' and '2016.12.31')) and cinsiyet in('Erkek') and gorev in('Personel Þefi')
+
+--Soru11//2013 ve 2016 yýllarýnda iþe baþlamamýþ maaþý 1000 ile 2500 arasýnda olan bayan sekreterleri listele(between kullan)
+select * from personel where ((isebaslamatarihi < '2016.01.01' or isebaslamatarihi > '2016.12.31') and (isebaslamatarihi < '2013.01.01' or isebaslamatarihi > '2013.12.31')) and (maas between 1000 and 2500) and cinsiyet = 'Kadýn' and gorev = 'Sekreter'
+
+--Soru12//2014 yýlýndan önce iþe baþlamýþ mühendis teknikerleri silin.
+delete from personel where isebaslamatarihi < '2014.01.01'
+
+
+
+
+
+

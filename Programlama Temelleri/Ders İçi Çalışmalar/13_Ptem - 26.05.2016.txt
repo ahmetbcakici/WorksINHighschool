@@ -1,0 +1,76 @@
+        //Klavyeden girilen bir mesajý ekrana kullanýcýnýn istediði kadar yazdýran metodlu program yaz
+        static void Main(string[] args)
+        {
+            Console.Write("Metin giriniz:");
+            string metin = Console.ReadLine();
+            Console.Write("Ekrana kaç kere yazdýrýlsýn:");
+            int adet = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine();
+            Yazilaniyazdir(metin,adet);               
+            Console.ReadKey();                        
+        }
+        static void Yazilaniyazdir(string a,int b)
+        {
+            for (int i = 0; i < b ; i++)
+            {
+                Console.WriteLine(a);
+            }            
+        }  
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+        static int Topla(int s1, int s2)
+        {
+            int sonuc = s1 + s2;
+            return sonuc;
+        }
+        static int Çýkar(int s1, int s2)
+        {
+            int sonuc = s1 - s2;
+            return sonuc;
+        }
+        static int Böl(int s1, int s2)
+        {
+            int sonuc = s1 / s2;
+            return sonuc;
+        }
+        static int Çarp(int s1, int s2)
+        {
+            int sonuc = s1 * s2;
+            return sonuc;
+        }
+        static void Main(string[] args)
+        {
+            Console.Write("1. sayýyý giriniz:");
+            int s1 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("2. sayýyý giriniz:");
+            int s2 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Girdiðiniz 2 sayý için hangi iþlemi uygulamak istersiniz?(+,-,/,*):");
+            string secim = Console.ReadLine();
+            if (secim == "+")
+            {
+                int gelendeger = Topla(s1,s2);
+                Console.WriteLine(gelendeger);
+            }
+            else if (secim == "-")
+            {                
+                Console.WriteLine(Çýkar(s1, s2));
+            }
+            else if (secim == "/")
+            {
+                Console.WriteLine(Böl(s1, s2));
+            }
+            else if (secim == "*")
+            {
+                Çarp(s1, s2);
+                Console.WriteLine(Çarp(s1, s2));
+            }
+            else
+            {
+                Console.WriteLine("Seçiminiz hatalý!");
+            }
+            Console.Read();
+
+                  
+        }

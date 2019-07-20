@@ -1,0 +1,5 @@
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru3\soru3\bin\Debug\soru3.exe
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru3\soru3\bin\Debug\soru3.pdb
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru3\soru3\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru3\soru3\obj\Debug\soru3.exe
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru3\soru3\obj\Debug\soru3.pdb

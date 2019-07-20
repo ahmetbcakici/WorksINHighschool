@@ -1,0 +1,86 @@
+            //1 den 10 a kadar olan sayýlarý ekrana yazdýrýnýz.
+
+            for (int i=1;i<=10;i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.Write("Ýþlem bitti");
+            Console.ReadKey();
+            
+ -----------------------------------------------------           
+
+            //Kullanýcýdan isim isteyip o ismi ekrana 10 defa yazdýran programý yaz
+
+            //Console.WriteLine("Ýsim gir");
+            //string isim = Console.ReadLine();
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine(isim);
+            //}
+            //Console.ReadKey();
+
+
+
+-----------------------------------
+            //klavyeden girilen sayý kadar ekrana sayý yazdýrýlsýn
+
+            Console.WriteLine("Sayý gir");
+            int sayi = Convert.ToInt16(Console.ReadLine());
+            
+            for (int i=1;i<=sayi;i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.Write("Ýþlem bitti");
+            Console.ReadKey();
+
+---------------------------------------------------
+            //klavyeden girilen sayýdan baþlayarak 1 e kadar eksilerek yap
+
+           
+
+            Console.Write("Sayý gir:");
+            int sayi = Convert.ToInt16(Console.ReadLine());
+            int i;
+
+            for (i = sayi;i >=1 ; i--)
+            {
+                Console.WriteLine(i);
+            }
+            Console.Write("Ýþlem bitti");
+            Console.ReadKey();
+
+---------------------------------------------
+
+            //klavyeden girilen sayýya kadar 0 dan baþlayýp 
+            //2 þer 2 þer yazdýran program
+
+           
+
+            Console.Write("Sayý gir:");
+            int sayi = Convert.ToInt16(Console.ReadLine());
+            int i;
+
+            for (i = 0;i<=sayi ; i=i+2)
+            {
+                Console.WriteLine(i);
+            }
+            Console.Write("Ýþlem bitti");
+            Console.ReadKey();
+----------------------
+
+            //Soru : 1 den 20 ye kadar olan sayýlarýn toplamýný bulup ekrana yazdýran programý yazýnýz.
+
+
+
+
+            int i,toplam=0;
+
+            for (i = 1;i<=20 ; i++)
+            {
+                 toplam += i;
+            }
+            Console.Write("Sonuç {0}",toplam);
+            Console.ReadKey();
+
+

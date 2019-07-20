@@ -1,0 +1,7 @@
+select GETDATE();
+
+select DATEADD(DD,10,'2000.05.10');
+
+select DATEDIFF(MM,'1999.12.21',getdate())
+
+select DATEPART(YY,'1999.12.21');

@@ -1,0 +1,149 @@
+string mevsim;
+                Console.Write("Mevsim girin: ");
+                mevsim = Console.ReadLine();
+                mevsim = mevsim.ToLower();
+                
+    
+            
+            
+            switch (mevsim)
+                    
+                {
+                    case "kýþ": Console.WriteLine("Aralýk Ocak Þubat");
+                        break;
+                    case "yaz": Console.WriteLine("Haziran Aðustos Temmuz");
+                        break;
+                    case "ilkbahar": Console.WriteLine("Mart Nisan Mayýs");
+                        break;
+                    case "sonbahar": Console.WriteLine("Eylül Ekim Kasým");
+                        break;
+                    default: Console.WriteLine("Hatalý giriþ");
+                        break;
+                }
+                Console.ReadKey();
+
+--
+
+string mevsim;
+            Console.WriteLine("Mevsim giriniz :");
+            mevsim = Console.ReadLine();
+            mevsim = mevsim.ToLower();
+            if (mevsim == "yaz")
+            {
+                Console.WriteLine("Haziran Temmuz Aðustos");
+            }
+            else if (mevsim == "kýþ")
+            {
+                Console.WriteLine("Aralýk Ocak Þubat");
+            }
+            else if (mevsim == "ilkbahar")
+            {
+                Console.WriteLine("Mart Nisan Mayýs");
+            }
+            else if (mevsim == "sonbahar")
+            {
+                Console.WriteLine("Eylül Ekim Kasým");
+            }
+            else
+                Console.WriteLine("Hatalý mevsim giriþi");
+            Console.ReadKey();
+
+-------
+
+ int s1, s2;
+            string secim;
+            Console.WriteLine("Toplama için + basýnýz");
+            Console.WriteLine("Çýkarma için - basýnýz");
+            Console.WriteLine("Çarpma için * basýnýz");
+            Console.WriteLine("Bölme için / basýnýz");
+            Console.Write("1. sayý giriniz: ");
+            s1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. sayý giriniz: ");
+            s2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Yapmak istediðiniz iþlemi seçiniz (*,/,+,-)");
+            secim = Console.ReadLine();
+            switch (secim)
+            {
+                case "+": Console.WriteLine("Sonuç : {0}", s1 + s2);
+                    break;
+                case "-": Console.WriteLine("Sonuç : {0}",s1-s2);
+                    break;
+                case "/": Console.WriteLine("Sonuç : {0}",s1/s2);
+                    break;
+                case "*": Console.WriteLine("Sonuç : {0}",s1*s2);
+                    break;
+                default: Console.WriteLine("Hatalý giriþ yaptýnýz lütfen (*,/,+,-) seçiniz");
+                    break;
+                    
+
+            }
+            Console.ReadLine();
+
+---
+
+
+int s1, s2;
+            string secim;
+            Console.WriteLine("Toplama için + basýnýz");
+            Console.WriteLine("Çýkarma için - basýnýz");
+            Console.WriteLine("Çarpma için * basýnýz");
+            Console.WriteLine("Bölme için / basýnýz");
+            Console.Write("1. sayý giriniz: ");
+            s1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. sayý giriniz: ");
+            s2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Yapmak istediðiniz iþlemi seçiniz (*,/,+,-)");
+            secim = Console.ReadLine();
+            if (secim == "+")
+                Console.WriteLine("Sonuç : {0}",s1+s2);
+            else if (secim == "-")
+                Console.WriteLine("Sonuç : {0}",s1-s2);
+            else if (secim == "*")
+                Console.WriteLine("Sonuç : {0}",s1*s2);
+            else if (secim == "/")
+                Console.WriteLine("Sonuç : {0}",s1/s2);
+            else 
+            Console.WriteLine("Hatalý seçim");
+            
+            Console.ReadKey();
+
+------
+
+int kenar1,kenar2;
+            string secim;
+            Console.WriteLine("Dikdörtgen veya Kare seçimi yapýnýz");
+            secim = Console.ReadLine();
+            switch (secim)
+            {
+                case "kare":
+                    Console.Write("Kenar giriniz: ");
+                    int kenar = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Çevre = {0}", kenar * 4);
+                    Console.WriteLine("Alan = {0}",kenar*kenar);
+                    break;
+                case "dikdortgen":
+                    Console.WriteLine("1. kenar giriniz: ");
+                    kenar1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("2. kenar giriniz: ");
+                    kenar2 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Çevre = {0}",(kenar1+kenar2)*2);
+                    Console.WriteLine("Alan = {0}",kenar1*kenar2);
+                    break;
+
+                    
+            }
+            Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+

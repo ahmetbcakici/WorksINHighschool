@@ -1,0 +1,17 @@
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\bin\Debug\P_boxgirisyapma.exe
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\bin\Debug\P_boxgirisyapma.pdb
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.Form1.resources
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.Properties.Resources.resources
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.exe
+c:\users\öğrenci02\documents\visual studio 2010\Projects\P_boxgirisyapma\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.pdb
+J:\OkulÇalışmaları\NTP ÇALIŞMALARI\(11)Kasım Ayı Çalışmaları\09.11.2016 Çalışmaları\P_box-Mouse_dow-up-Giris\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.exe
+J:\OkulÇalışmaları\NTP ÇALIŞMALARI\(11)Kasım Ayı Çalışmaları\09.11.2016 Çalışmaları\P_box-Mouse_dow-up-Giris\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.pdb
+J:\OkulÇalışmaları\NTP ÇALIŞMALARI\(11)Kasım Ayı Çalışmaları\09.11.2016 Çalışmaları\P_box-Mouse_dow-up-Giris\P_boxgirisyapma\bin\Debug\P_boxgirisyapma.exe
+J:\OkulÇalışmaları\NTP ÇALIŞMALARI\(11)Kasım Ayı Çalışmaları\09.11.2016 Çalışmaları\P_box-Mouse_dow-up-Giris\P_boxgirisyapma\bin\Debug\P_boxgirisyapma.pdb
+J:\OkulÇalışmaları\NTP ÇALIŞMALARI\(11)Kasım Ayı Çalışmaları\09.11.2016 Çalışmaları\P_box-Mouse_dow-up-Giris\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.csprojResolveAssemblyReference.cache
+J:\OkulÇalışmaları\NTP ÇALIŞMALARI\(11)Kasım Ayı Çalışmaları\09.11.2016 Çalışmaları\P_box-Mouse_dow-up-Giris\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.Form1.resources
+J:\OkulÇalışmaları\NTP ÇALIŞMALARI\(11)Kasım Ayı Çalışmaları\09.11.2016 Çalışmaları\P_box-Mouse_dow-up-Giris\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.Properties.Resources.resources
+J:\OkulÇalışmaları\NTP ÇALIŞMALARI\(11)Kasım Ayı Çalışmaları\09.11.2016 Çalışmaları\P_box-Mouse_dow-up-Giris\P_boxgirisyapma\obj\x86\Debug\P_boxgirisyapma.csproj.GenerateResource.Cache

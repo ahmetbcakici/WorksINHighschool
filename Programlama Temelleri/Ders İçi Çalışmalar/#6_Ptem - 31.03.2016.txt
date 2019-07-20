@@ -1,0 +1,55 @@
+1 den 10 a kadar çarpým tablosu yapýnýz
+
+            int carpim = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("{0} ve katsayýlarý",i);
+                for (int j = 1; j <=10 ; j++)
+                {
+                    carpim = i * j;
+                    Console.WriteLine("{0} x {1} = {2}",i,j,carpim);
+                }
+            }
+            Console.ReadKey();
+
+-------------------------------------------------------------
+
+            int carpim = 0;
+            Console.Write("Baþlangýç deðer giri:");
+            int basla = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Bitiþ deðeri gir:");
+            int bitis = Convert.ToInt16(Console.ReadLine());
+            for (int i = basla; i <=bitis; i++)
+            {
+                Console.WriteLine("{0} ve katsayýlarý",i);
+                for (int j = 1; j <=10; j++)
+                {
+                    carpim = i * j;
+                    Console.WriteLine("{0} x {1} = {2}",i,j,carpim);
+                }
+            }
+            Console.ReadKey();
+--------------------------------------------------------------
+            //20 öðrencinin klavayeden notu girilecektir bunlarýn 
+            //not toplamý ve ortalamasýný alýnacaktýr
+            int toplam = 0, ort = 0, not = 0;
+            for (int i = 1; i <= 20; i++) 
+            {
+                Console.Write("Notu giriniz:");
+                not = Convert.ToInt16(Console.ReadLine());
+                if (not < 0 || not > 100)
+                {
+                    Console.WriteLine("Notunuz 0 dan büyük 100 den küçük olmalýdýr");
+                }
+                else
+                {
+                    not = Convert.ToInt16(Console.ReadLine());
+                }
+
+                toplam += not;
+               
+            }
+            ort = toplam / 20;
+            Console.WriteLine("20 öðrencinin notu toplamý {0} not ortalamasý {1}",toplam,ort);
+            Console.ReadKey();
+

@@ -1,0 +1,27 @@
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+c:\users\öğrenci10\documents\visual studio 2010\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+F:\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+F:\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+F:\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+F:\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+F:\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+F:\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\12.12.2016 Çalışmaları\KalıtımSınıfİBRHM\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog

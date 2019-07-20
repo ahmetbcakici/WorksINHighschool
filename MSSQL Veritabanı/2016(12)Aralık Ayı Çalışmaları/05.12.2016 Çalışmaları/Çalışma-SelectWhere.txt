@@ -1,0 +1,36 @@
+create database hastane;
+use hastane;
+create table doktor(doktorno int identity(1,1)primary key,ad varchar(20)not null,soyad varchar(20)not null,anabilimdali varchar(30)not null,brans varchar(30)not null,idarigorev varchar(30),odano char(5)not null,nobetTarihi date not null,calismasaati tinyint not null,saatucreti decimal(7,2) not null);
+insert into doktor values ('Ahmet','Çakýcý','Genel Cerrah','Beyin Cerrahý','Baþ Hekim','101','2014.12.01',20,75) , ('Resul','Yusuf','Dahiliye','Diyetisyen',null,'102','2014.12.02',15,40) , ('Oðuzhan','Kerem','Dahiliye','Diyetisyen','Baþ Hekim Yrd.','103','2015.12.03',20,70),('Sefa','Yerebakan','Genel Cerrah','Kalp Cerrahý','Yönetim Kurulu Baþkaný','104','2016.12.04',18,65) , ('Berkan','Erkan','Genel Cerrah','Estetik Cerrahý',null,'105','2015.12.05',15,40),('Kerem','Bakan','Genel Cerrah','Kalp Cerrahý','Yönetim Kurulu Baþkan Yrd.','106','2016.12.30',17,60) , ('Emirhan','Öztürk','Dahiliye','Böbrek Hastalýklarý','Yönetim Kurulu Üyesi','107','2015.05.25',20,55) , ('Erkan','Eyek','Dahiliye','Noroloji',null,'107','2016.07.07',15,40),('Yýlmaz','Yýldýrým','Dahiliye','Diyetisyen','Yönetim Kurulu Üyesi','108','2014.03.22',15,55),('Ýbrahim','Çakar','Genel Cerrah','Kalp Cerrahý','Yönetim Kurulu Üyesi','109','2015.12.03',10,55),('Yusuf','Arslan','Genel Cerrah','Beyin Cerrahý',null,'110','2016.05.30',13,40),('Yiðit','Nacak','Genel Cerrah','Estetik Cerrahý',null,'111','2015.09.12',15,40) , ('Hakan','Bakýr','Genel Cerrah','Estetik Cerrahý',null,'112','2014.03.09',10,40),('Ýsmail','Demir','Dahiliye','Noroloji',null,'113','2016.11.21',20,40),('Ýsmail','Orhan','Dahiliye','Diyetisyen','Yönetim Kurulu Üyesi','114','2016.01.01',15,55),('Samet','Gökha','Genel Cerrah','Beyin Cerrahý',null,'115','2015.12.31',10,40),('Doðukan','Saðbakan','Genel Cerrah','Kalp Cerrahý',null,'116','2014.02.18',10,40),('Tugay','Günaydýn','Dahiliye','Noroloji',null,'117','2015.07.05',16,40),('Bilal','Yýlmaz','Genel Cerrah','Estetik Cerrahý',null,'118','2016.10.02',20,40),('Yýlmaz','Vural','Dahiliye','Böbrek Hastalýklarý',null,'119','2014.01.10',20,40),('Mehmet','Peker','Genel Cerrah','Kalp Cerrahý',null,'120','2014.10.03',20,40);
+
+select *from doktor
+
+
+--Soru1//Doktorno 2,5,7 olan doktorlarýn adýný,soyadýný ve doktornolarýný listele.
+select*from doktor where doktorno = 2 or doktorno = 5 or doktorno = 7;
+
+--Soru2//Odano 110,115,105 olmayan kiþileri listele.
+select*from doktor where odano != 110 and odano != 115 and odano != 105;
+
+--Soru3//Branþý beyin cerrahý,kalp cerrahý ve diyetisyen olan kiþileri listele.
+select*from doktor where brans = 'Beyin Cerrahý' or brans = 'Kalp Cerrahý' or brans = 'Diyetisyen';
+
+--Soru4//Yönetim kurulu üyelerinin saat ücretini %10 arttýr.
+update doktor set saatucreti += saatucreti * 0.10 where idarigorev = 'Yönetim Kurulu Üyesi'
+
+--Soru5//Çalýþma saati 10 ile 15 arasýnda olan genel cerrahi bölümünde çalýþn estetik ve kalp cerrahlarýný listele.
+select*from doktor where (calismasaati >= 10 and calismasaati <= 15) and anabilimdali = 'Genel Cerrah' and (brans = 'Estetik Cerrahý' or brans = 'Kalp Cerrahý')
+
+--Soru6//Yönetim kurulu üyelerinden çalýþma saati 10 saatten fazla olanlardan bugün  nöbeti olan kiþileri listeleyin
+select*from doktor where idarigorev = 'Yönetim Kurulu Üyesi' and calismasaati > 10 and nobetTarihi = GETDATE()
+
+--Soru7//15 saatten fazla çalýþma saati olan Branþý üroloji ve diyetisyenleri listeleyin
+select*from doktor where calismasaati > 15 and (brans = 'Noroloji' or brans = 'Diyetisyen')
+
+--Soru8//Doktor numarasý 7-13 arasýnda olmayan böbrek hastalýklarý ile ilgilenen 20 saatten fazla çalýþan kiþileri listeleyin.
+select*from doktor where (doktorno < 7 or doktorno > 13) and brans = 'Böbrek Hastalýklarý' and calismasaati >= 20;
+
+--Soru9//10 ile 18 arasý çalýþan(10 ve 18 dahil) idari görevi olmayan, dahiliye ana bilim dalýnda çalýþan kiþileri listeleyin.
+select*from doktor where (calismasaati >= 10 and calismasaati <= 18) and anabilimdali = 'Dahiliye' and idarigorev is null;
+
+

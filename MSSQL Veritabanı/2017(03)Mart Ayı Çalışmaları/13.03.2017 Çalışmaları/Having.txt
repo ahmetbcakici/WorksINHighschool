@@ -1,0 +1,14 @@
+--En yüksek ücretin 3000'den yüksek olan bölümlerin ortalama ücretlerini listele.
+select bolum,AVG(ucret) from personel group by bolum having MAX(ucret) > 3000
+
+--Toplam maaþý 10000 liranýn üstündeki bölümlerin toplam maaþlarýný ve çalýþan sayýlarýný listele.
+select bolum,SUM(maas),COUNT(*) from personel group by bolum having SUM(maas) > 10000
+
+--5 personelden fazla çalýþana ait olan anabilimdallarýný listele çalýþan sayýsýyla beraber listele.
+select anabildal,COUNT(*) from doktor group by anabildal having COUNT(*) >= 5
+
+--Erkek personele ait maþlarýn ortalamasý 2000'den fazla olan bölümlerdeki 1200'den yüksek alan erkeklerin bölümlerine göre ort ücret listele.
+select brans,AVG(saat*saatucret) from doktor where cinsiyet = 'e' and (saat*saatucret >= 1200) group by brans having AVG(saat*saatucret) >= 2000
+
+--Kadýn personel sayýsý 6 dan yüksek olan bölümlerin maaþ toplamlarý 20 binden yüksek olanlarý listele.
+select anabildal from doktor where cinsiyet = 'k' group by anabildal having SUM(saat*saatucret) > 20000 and COUNT(*) > 6

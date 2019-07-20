@@ -1,0 +1,14 @@
+create database sirket;
+use sirket;
+create table personel(p_no int identity(1,1)primary key,pad varchar(20),psoyad varchar(20),maas smallint,bolum_ad varchar(30),dogumyeri varchar(15),sokak_ad varchar(30),cadde varchar(30),mahalle varchar(30),apt_ad varchar(30),apt_no smallint,daire_no smallint,il varchar(15),ilce varchar(30));--Soru1 tamamlandý.
+alter table personel alter column bolum_ad varchar(50);--Soru2//Bölüm_adý 50 karaktere çýkarýn.
+alter table personel add tc_no char(11);--Soru3//Tabloda olmayan tc alaný ekle.
+insert into personel values ('Ahmet','Çakýcý',1500,'Biliþim','Ýstanbul','Kara Sokak','Çiçek','Mahalle A','A5',12,'Ýstanbul','Beylikdüzü','37993130000'),('Mehmet','Yerebakan',2000,'Muhasebe','Ankara','Aydýn Sokak','Papatya','Mahalle B','D12',15,'Ýzmir','Kartal','12345678900'),('Erkan','Berkan',3000,'Ticaret','Ýzmir','ÇarþýAltý','Zowa','Mahalle Z','B30',02,'Zonguldak','Merca','12332133333'),('Oðuz','Yergün',1000,'Lojistik','Gümüþhane','Orman','Gül','Mahalle H','A19',30,'Ýstanbul','Beylikdüzü','11223344556'),('Yiðit','Zeki',5000,'Turizm','Yalova','ABC','DFG','Mahalle R','C35',12,'Tekirdað','Ýlce200','11111111111');--Soru4//5'er kayýt ekle
+select *from personel;--Soru5//Tablodaki tüm kayýt ve alanlarý listele.
+select psoyad,pad,maas from personel;--Soru6//Tablodan sýrasýyla soyad,ad,maas listele.
+select pad+' '+psoyad as [Ad Soyad],il as Ýl from personel;--Soru7//Ad,soyad tek sütun adres ise baþka sütun'da olarak listele.
+--Soru8//Tüm kayýtlarý listelerken alan isimlerini düzeltin.(alan as Alan)
+select distinct dogumyeri from personel--Soru9//Doðum yerini tekrarsýz listele.
+alter table personel drop column il,ilce;--//Soru10Ýl,ilçe alanlarýný sil.
+delete from personel;--//Tüm kayýtlarý sil.
+drop table personel;--//Tabloyu sil.

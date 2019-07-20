@@ -1,0 +1,16 @@
+--Maaþ ortalamasý 1500'den yüksek bölümlerdeki bölümleri personel sayýsýný ve maaþ ortalamasýný listele.
+
+--Her bölümdeki 2000 yýlýndan önce doðan kiþilerden cinsiyetine göre en yüksek ve en düþük maaþlarý listele.
+
+--Personel sayýsý 10 dan fazla olan bölümlerin cinsiyetlerine göre personel sayýlarýný listeleyin.
+
+--Çocuðu olan personellerin ad soyadý listele.
+
+--Çocuðu ikiden fazla olan kiþilerin ad soyadý listele.
+
+--Herhangi bir proje yürüten bölümleri listele.
+
+--Dörtden fazla proje yürüten bölümleri listele.
+
+--En az bir tane erkek çocuðu olan personelleri ad soyad listele.
+

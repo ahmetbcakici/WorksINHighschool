@@ -1,0 +1,19 @@
+Klavyeden girilen sayýdan 100 e kadar olan sayýlardan 2 ye ve 5 e tam 
+bölünenleri ekrana yazdýran ve toplayan prog yaz
+
+
+            int toplam = 0;
+            Console.Write("Sayý giriniz:");
+            int sayi = Convert.ToInt16(Console.ReadLine());
+            for (int i = sayi; i <= 100; i++) 
+            {
+                if ((i % 2) == 0 && (i % 5) == 0)
+                {
+                    
+                    toplam = toplam + i;
+                    Console.WriteLine(i);
+                }                
+            }
+            Console.WriteLine("Toplam = {0}",toplam);
+            Console.WriteLine("Bitti");
+            Console.ReadKey();

@@ -1,0 +1,15 @@
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form1.resources
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+C:\Users\Öğrenci02\Documents\Visual Studio 2010\Projects\Hata mesajı\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+C:\Users\Öğrenci02\Documents\Visual Studio 2010\Projects\Hata mesajı\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+F:\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\31.10.2016 Çalışmaları\Try-Catch_hatamesaji\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+F:\NTP ÇALIŞMALARI\Ekim(10)Ayı Çalışmaları\31.10.2016 Çalışmaları\Try-Catch_hatamesaji\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\31.10.2016 Çalışmaları\Try-Catch_hatamesaji\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(10)Ekim2016 Ayı Çalışmaları\31.10.2016 Çalışmaları\Try-Catch_hatamesaji\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb

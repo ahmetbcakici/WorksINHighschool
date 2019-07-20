@@ -1,0 +1,23 @@
+--Doktor tablosundaki 105,107,112 nolu odalardakini listele.
+select*from doktor where odano in('105','107','112');
+
+--Branþý üroloji olan ve diyetisyen olan doktorlarý listele.
+select*from doktor where brans in('Üroloji','Diyetisyen');
+
+--Listeleme esnasýnda hesaplamak.
+select * , calismasaati*saatucreti as [Maaþ] from doktor
+
+--Doktorlarýn bugünün tarihindne kaç gün önce nöbet tuttuðunu listele.
+select *,DATEDIFF(day,nobetTarihi,GETDATE())  as [Kaç Gün Önce] from doktor order by [Kaç Gün Önce];
+
+--Son 1 ay içinde nöbet tutanlarý listele.
+select ad,soyad,nobetTarihi from doktor where nobetTarihi >= GETDATE()-30
+
+--Doktor numarasý 15-25 olanlarý listele(15-25dahil)
+select * from doktor where doktorno between 15 and 25
+
+--Çalýþma saati 10-12 arasý olan diyetisyenleri listele.
+select * from doktor where (calismasaati between 10 and 12) and brans in ('Diyetisyen')
+
+--2014 yýlýnda nöbet tutan personelleri listele.
+select * from doktor where nobetTarihi between '2014.01.01' and '2014.12.31'

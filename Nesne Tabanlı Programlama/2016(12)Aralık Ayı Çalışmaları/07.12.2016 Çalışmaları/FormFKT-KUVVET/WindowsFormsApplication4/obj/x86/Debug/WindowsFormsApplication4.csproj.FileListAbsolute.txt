@@ -1,0 +1,11 @@
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.Form1.resources
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.Properties.Resources.resources
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.exe
+c:\users\öğrenci02\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.pdb
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\07.12.2016 Çalışmaları\FormFKT-KUVVET\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.exe
+F:\OkulÇalışmaları\NTP ÇALIŞMALARI\(12)Aralık Ayı Çalışmaları\07.12.2016 Çalışmaları\FormFKT-KUVVET\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.pdb

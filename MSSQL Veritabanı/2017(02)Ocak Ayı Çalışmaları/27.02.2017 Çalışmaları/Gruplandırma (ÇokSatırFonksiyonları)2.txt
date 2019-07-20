@@ -1,0 +1,16 @@
+--Bugün iþe baþlayan personellerden maaþý 1500-3000 arasý olan kadýnlardan en yüksek ve en düþük maaþa sahipleri listele.
+select min(maas),max(maas) from personel where (maas between 1500 and 3000) and cinsiyet = 'B' and ibt = CONVERT(date,getdate())
+
+--11A sýnýfýndaki öðrencilerin mevcudunu yazýnýz.
+select COUNT(*) from personel where sinif = '11A'
+
+--Personel tablosunda kaç farklý bölüm olduðunun sayýsýný gösteriniz.
+select COUNT(distinct ulke) from personel 
+
+--Ülkelere göre çalýþan sayýlarýný listele.
+select ulke,COUNT(*) from personel group by ulke
+
+--Þirkette çalýþan kadýn ve erkek personellerin sayýsý.
+select cinsiyet,COUNT(*) from personel group by cinsiyet
+
+--Her bölümdeki kadýn ve erkek personellerin sayýsý

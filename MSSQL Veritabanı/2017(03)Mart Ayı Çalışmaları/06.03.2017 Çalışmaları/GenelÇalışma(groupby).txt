@@ -1,0 +1,56 @@
+create database hastane
+use hastane
+
+create table doktor
+(
+dok_no int identity(1,1)primary key,
+ad varchar(20),
+soyad varchar(20),
+cinsiyet char(1),
+anabildal varchar(20),
+brans varchar(20),
+ýdarýgrv varchar(20),
+odano char(3),
+nbt_trh date,
+saat int ,
+saatucret money
+)
+
+insert into doktor(ad,soyad,cinsiyet,anabildal,brans,ýdarýgrv,nbt_trh, odano,saat,saatucret)values
+('sefa','özkan','e','genel cerrah','beyin cerrah','baþ hekim','05.12.2016','101','8','75'),
+('berkan','yanardað','e','genel cerrah','kalp cerrah','baþ hekim yar','06.12.2016','102','9','60'),
+('orkun','ceyhan','e','genel cerrah','estetik cerrah','yönetim kurulu baþ','07.12.2016','103','10','55'),
+('ahmet','çakýcý','e','dahiliye','böbrek hastalýklarý','yönetim kurulu yar','08.12.2016','104','11','50'),
+('hakan','akýncý','e','dahiliye','diyetisyen','yönetim kurulu üyesi','09.12.2016','105','12','45'),
+('alex','demirci','e','dahiliye','üroloji','yönetim kurulu üyesi','05.10.2016','106','13','45'),
+('fýrat','altýndað','e','dahiliye','diyetisyen','yönetim kurulu üyesi','05.12.2015','107','14','45')
+
+insert into doktor(ad,soyad,cinsiyet,anabildal,brans,nbt_trh, odano,saat,saatucret)values
+('fýrat','gümüþdað','e','genel cerrah','beyin cerrah','05.12.2014','108','15','40'),
+('volkan','demirel','e','genel cerrah','kalp cerrah','05.11.2016','109','16','40'),
+('þener','özbayraklý','e','genel cerrah','estetik cerrah','07.11.2016','110','17','40'),
+('mehmet','kaldýrým','e','diyetisyen','böbrek hastalýklarý','05.11.2014','111','18','40'),
+('ilknur','topal','k','genel cerrah','beyin cerrah','07.09.2015','112','19','40'),
+('hasan','Yalýn','e','genel cerrah','kalp cerrah','02.12.2016','113','20','40'),
+('alper','potuk','e','dahiliye','üroloji','07.09.2015','114','21','40'),
+('volkan','þen','e','genel cerrah','beyin cerrah','08.04.2014','115','22','40'),
+('moussa','sow','e','genel cerrah','estetik cerrah','04.12.2015','116','23','40'),
+('jeremain','lens','e','dahiliye','diyetisyen','01.12.2016','117','24','40'),
+('robin','van persie','e','dahiliye','böbrek hastalýklarý','06.08.2014','118','15','40'),
+('simon','kjaer','e','genel cerrah','beyin cerrah','08.12.2014','119','17','40'),
+('martin','skrtel','e','genel cerrah','kalp cerrah','12.08.2014','120','9','40')
+
+--Soru 1-) Branþlara göre çalýþma saati 10'dan yüksek olanlarýn sayýsýný listeleyen sorgu.
+select brans ,count(*)'Çalýsma saati 10dan buyuk olanlar'from doktor where saat > 10 group by brans
+--Soru 2-) Branþlara göre kadýn ve erkeklerin ortalama çalýþma saatlerini listeleyin sorgu.
+select brans ,AVG(saat)'Saat Ortalamasý' from doktor group by brans,cinsiyet
+--Soru 3-) Branþlarýn en dusuk ve en yuksek maaþlarýný listeleyen sorgu(Hesaplamayý deneyin)
+select brans,MIN(saatucret)'Min',MAX(saatucret)'Maaþ' from doktor group by brans 
+--Soru 4-) Maaþý 1000'den yüksek olanlarýn anabilim dallarýna gore toplam maaslarýný ve kiþi sayýlarýný listeleyen sorgu.
+select anabildal,SUM(saatucret*saat)'Maaþlarýn Toplamý',Count(*)'Kiþi Sayýsý'from doktor where (saatucret*saat)>1000 group by anabildal
+--Soru 5-) Anabilim dallarýndaki branslara gore kisi sayýlarý ortalama maaslarý en yuksek ve en dusuk maaslarý listeleyin
+
+--Soru 6-) Branslara gore idari gorev alanlarýn sayýsýný listeleyen sorgu.
+select ýdarýgrv, count(*) 'Kiþi Sayýsý' from doktor where ýdarýgrv is not null group by ýdarýgrv
+
+select * from doktor

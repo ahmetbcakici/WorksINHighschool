@@ -1,0 +1,5 @@
+--Personel tablosundaki soyada göre azalýp , ada göre artan sýralamayý yap.
+select * from personel order by soyad desc , ad asc
+
+--Personel tablosunda bugün iþe baþlayanlarýn önce ada sonra soyda göre azalan sýrada listele.
+select * from personel where isebaslamatrh = getdate() order by ad desc , soyad desc

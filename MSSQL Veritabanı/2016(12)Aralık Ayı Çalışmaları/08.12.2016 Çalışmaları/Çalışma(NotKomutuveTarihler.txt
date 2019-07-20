@@ -1,0 +1,37 @@
+--Doktor tablosunda branþý diyetisyen olmayanlarý listele.
+select*from doktor where brans != 'Diyetisyen'
+w/n select*from doktor where not(brans = 'Diyetisyen')
+
+--Maaþý 1500 ile 3000 arasý olmayanlarý listele.
+select*from doktor where maas < 1500 or maas > 3000
+w/n select*from doktor where not(maas>=1500 and maas<=3000)
+
+--Oda numarasý 105,107,110 olmayanlarý listele.
+select*from doktor where odano != 105 and odano != 107 and odano != 110
+w/n select*from doktor where not(odano=105 or odano=107 or odano=110)
+
+--Branþý diyetisyen ve üroloji olmayanlarý listele.
+select*from doktor where brans != 'Diyetisyen' and brans != 'Üroloji'
+w/n select*from doktor where not(brans = 'Diyetisyen' or brans = 'Üroloji')
+
+--2014 yýlýnda nöbet tutan doktorlarý listele.
+select*from doktor where nobetTarihi >= '2014.01.01' and nobetTarihi <= '2014.31.12'
+
+--2014 yýlýnda nöbet tutmayan doktorlarý listele.
+select*from doktor where not(nobetTarihi >= '2014.01.01' and nobetTarihi <= '2014.31.12)
+select*from doktor where nobet < '2014.01.01' or nobet > '2014.12.31'
+
+--2014 ve 2015 yýllarýnda nöbet tutanlarý listele.
+select*from doktor where nobet >= '2014.01.01' and nobet <= '2015.12.31'
+select*from doktor where (nobet >= '2014.01.01' and nobet <= '2014.12.31') OR (nobet >= '2015.01.01' and nobet <= '2015.12.31')
+
+--2014 ve 2016 yýllarýnda nöbet tutanlar dýþýndakileri listele.
+select*from doktor where not((nobetTarihi >='2015.01.01' and nobetTarihi <='2015.12.31') and (nobetTarihi>='2014.01.01' and nobetTarihi <= '2016.12.31'))
+select*from doktor where not(nobetTarihi >= '2014.01.01' and nobetTarihi <= '2014.12.31') and not(nobetTarihi >= '2016.01.01' and nobetTarihi <= '2016.12.31');
+
+
+
+
+ 
+
+

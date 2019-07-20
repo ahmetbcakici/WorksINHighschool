@@ -1,0 +1,7 @@
+C:\Users\Ahmet Bugra Cakici\source\repos\SayiTahminYarismasi\SayiTahminYarismasi\bin\Debug\SayiTahminYarismasi.exe.config
+C:\Users\Ahmet Bugra Cakici\source\repos\SayiTahminYarismasi\SayiTahminYarismasi\bin\Debug\SayiTahminYarismasi.exe
+C:\Users\Ahmet Bugra Cakici\source\repos\SayiTahminYarismasi\SayiTahminYarismasi\bin\Debug\SayiTahminYarismasi.pdb
+C:\Users\Ahmet Bugra Cakici\source\repos\SayiTahminYarismasi\SayiTahminYarismasi\obj\Debug\SayiTahminYarismasi.csprojResolveAssemblyReference.cache
+C:\Users\Ahmet Bugra Cakici\source\repos\SayiTahminYarismasi\SayiTahminYarismasi\obj\Debug\SayiTahminYarismasi.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet Bugra Cakici\source\repos\SayiTahminYarismasi\SayiTahminYarismasi\obj\Debug\SayiTahminYarismasi.exe
+C:\Users\Ahmet Bugra Cakici\source\repos\SayiTahminYarismasi\SayiTahminYarismasi\obj\Debug\SayiTahminYarismasi.pdb

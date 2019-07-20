@@ -1,0 +1,20 @@
+--Ýþletmede çalýþan personellerin maaþ toplamlarýný listele.
+select sum(maas) from personel
+
+--Bilgi iþlem ve satýþ bölümündeki personellere verilen toplam maaþý listele.
+select sum(maas) from personel where bolum = 'Bilgi Ýþlem' or bolum = 'Satýþ Bölümü'
+
+--2011 ve 2013 yýlýnda iþe baþlamýþ maaþý 1000-2000 dýþýnda ve soyadýnýn ilk harfi a-t aralýðý olmayan personellerin maaþ toplamlarýný listele.
+select sum(maas) from personel where ((isebaslamatarih between '01.01.2011' and '12.31.2011') or (isebaslamatarih between '01.01.2013' and '12.31.2013')) and (not(maas between 1000 and 2000)) and (soyad like '[^a-t]%');
+select sum(maas) from personel where (year(isebaslamatarih)=2011 or year(isebaslamatarih)=2013) and not(maas between 1000 and 2000) and soyad like'[^a-t]%'; 
+
+--Þirkette verilen ortalama maaþý listele.
+select avg(maas) from personel
+
+--Bilgi iþlemdeki personellerin toplam ve ortalam maaþlarýný listele.
+select SUM(maas) as 'Toplam Maaþ',AVG(maas) as 'Ortalamalarý' from personel where bolum = 'Bilgi Ýþlem';
+
+--Son bir yýl içinde iþe baþlayanlarýn arasýndan en büyük maaþa sahip olaný listele.
+select max(maas) from personel where getdate() - 365 <= isebaslamatarihi
+
+

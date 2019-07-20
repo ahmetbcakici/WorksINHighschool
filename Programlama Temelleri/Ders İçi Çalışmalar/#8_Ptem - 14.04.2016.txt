@@ -1,0 +1,95 @@
+ÖDEV - Klavyeden 0 girilene kadar o ana kadar girilen sayýlarýn
+toplamýný alýp 0 girilince döngüyü bitiren ve toplamý gösteren prog.
+
+
+Ç1
+            int s, t = 0;
+            Console.Write("Sayý girin:");
+            s = Convert.ToInt16(Console.ReadLine());
+            while (s != 0)
+            {
+                t += s;
+                Console.Write("Sayý girin:");
+                s = Convert.ToInt16(Console.ReadLine());                
+            }
+            Console.WriteLine(t);
+            Console.Read();
+Ç2
+            int s = 1, t = 0;
+            while (s != 0)
+            {
+                Console.Write("Sayý girin:");
+                s = Convert.ToInt16(Console.ReadLine());
+                t += s;
+            }
+            Console.WriteLine(t);
+            Console.Read();
+----------------------------------------------------------------------------------
+Üstteki ödeve ortalama almayýda ekleyelim
+
+            int s, t = 0, sayac = 0;
+            Console.Write("Sayý girin:");
+            s = Convert.ToInt16(Console.ReadLine());
+            while (s != 0)
+            {
+                t += s;
+                sayac++;
+                Console.Write("Sayý girin:");
+                s = Convert.ToInt16(Console.ReadLine());
+            }
+            Console.WriteLine("Girilen sayýlarýn toplamý {0} \nOrtalamasý {1}",t,t/sayac);
+            Console.Read();
+----------------------------------------------------------------------------------
+           //Klavyeden 0 girilene kadar sayýlarýn tekleri ayrý , çiftleri ayrý toplayan
+           //ve sonuçlarý ekrana yazan prog yaz.
+            int tektop = 0, ciftop = 0;
+            Console.Write("Sayý girin:");
+            int s = Convert.ToInt16(Console.ReadLine());            
+            while (s!=0)
+            {
+                if ((s % 2) == 0)
+                {
+                    ciftop += s;
+                }
+                else
+                {
+                    tektop += s;
+                }
+                Console.Write("Sayý girin:");
+                s = Convert.ToInt16(Console.ReadLine()); 
+            }
+            Console.WriteLine("Sayýlarýn teklerinin toplamý {0} çiftlerinin toplamý {1}",tektop,ciftop);
+            Console.Read();
+----------------------------------------------------------------------------------
+           //Klavyeden 0 girilene kadar sayýlarýn tekleri ayrý , çiftleri ayrý toplayan
+           //ve sonuçlarý ekrana yazan prog yaz.
+            int tektop = 0, ciftop = 0, teksayac = 0, ciftsayac = 0;
+            Console.Write("Sayý girin:");
+            int s = Convert.ToInt16(Console.ReadLine());
+            while (s != 0) 
+            {
+                if ((s % 2) == 0)
+                {
+                    ciftop += s;
+                    ciftsayac++;
+                }
+                else
+                {
+                    tektop += s;
+                    teksayac++;
+                }
+                Console.Write("Sayý girin:");
+                s = Convert.ToInt16(Console.ReadLine());
+            }
+            Console.WriteLine("Tek sayýlarýn toplamý = {0} \n Ortalamalarý {1}", tektop, tektop / teksayac);
+            Console.WriteLine("Çift sayýlarýn toplamý = {0} \n Ortalamalarý {1}", ciftop, ciftop / ciftsayac);
+            Console.Read();
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+

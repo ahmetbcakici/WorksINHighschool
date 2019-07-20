@@ -1,0 +1,22 @@
+create database market;
+use market;
+create table malzeme(malzeme_kod int identity(1,1)primary key,m_adý varchar(20) not null,stok_miktar smallint not null);
+create table siparis(s_no int identity(1,1)primary key,m_kod int,s_miktar int,constraint fk_malzeme foreign key(m_kod)references malzeme(malzeme_kod));
+create table stokkontrol(m_kod int,min_sip_mik int,max_sip_mik int,constraint fk_mkod foreign key (m_kod) references malzeme(malzeme_kod));
+--Soru1//Tablolar oluþturulurken pk,fk kýsýtlamalarý constraint ile eklenecektir.
+
+alter table siparis drop constraint fk_malzeme;--Soru2//Sipariþ tablosundaki FK'i sil.
+alter table siparis add tarih date not null;--Soru3//Sipariþ tablosuna tarihi boþ geçilmicek þekilde ekle.
+alter table malzeme alter column m_adý varchar(30);--Soru4//Malzeme adý sütununun uzunluðunu 30'a çýkar.
+alter table siparis add constraint fk_malzeme foreign key(m_kod)references malzeme(malzeme_kod);--Soru5//Sipariþ tablosuna FK kýsýtlamasýný tekrar ekle.
+insert into malzeme values ('Elma',5),('Armut',10),('Ayva',25);--SORU6//Her tabloya 3 veri gir.
+insert into siparis values (1,10,'2016.10.10'),(2,30,'2016.12.31'),(2,25,'2015.12.10');--SORU6//Her tabloya 3 veri gir.
+insert into stokkontrol values (3,10,50),(2,25,50),(3,20,25);--SORU6//Her tabloya 3 veri gir.
+update stokkontrol set min_sip_mik+=min_sip_mik*10/100,max_sip_mik+=max_sip_mik*10/100 where min_sip_mik < 50;--Soru7//Min_sip_miktarý 50'den az ürünlerin min ve max miktarýný %10 arttýr.
+delete from siparis where tarih < '10.11.2016';--Soru8//10.11.2016'dan önce satýþý yapýlan ürünleri sil.
+alter table stokkontrol drop column min_sip_mik,max_sip_mik;--Soru9//Stokkontrol tablosundan min,max alanlarýný sil.
+drop table stokkontrol;--Soru10//Stokkontrol tablosunu sil.
+
+
+
+select *from siparis;select *from malzeme;select*from stokkontrol;

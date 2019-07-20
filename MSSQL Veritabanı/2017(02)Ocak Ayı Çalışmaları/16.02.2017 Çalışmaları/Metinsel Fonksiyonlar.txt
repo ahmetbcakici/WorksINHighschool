@@ -1,0 +1,27 @@
+select SUBSTRING('ÝsmayilAkan',1,2);
+
+select LEFT('AkanÝsmayil',4);
+
+select RIGHT('AkanÝsmayil',4);
+
+select LEN(ad) from personel
+
+select RTRIM('Metin       ');
+
+select LTRIM('   Metin');
+
+select REPLACE('ahmetçakýcý','çakýcý','bakan');  {ahmetbakan}
+
+select CHARINDEX('mert','Merhaba mert Dünya');  {9}
+
+select REVERSE('ahmet');  {temha}
+
+
+
+
+--Ýlk 2 harfi büyük baþlayýp diðer harfleriyle birleþtiren sorguyu yaz.
+select UPPER(SUBSTRING(ad,1,LEN(ad)-3))+''+SUBSTRING(ad,3,LEN(ad)-2) from personel
+
+--Rastgele þifre oluþturan sorguyu yaz
+select LOWER(LEFT(ad,2))+''+SUBSTRING(tcno,11/2,3)+''+''+UPPER(RIGHT(soyad,2)) from personel
+

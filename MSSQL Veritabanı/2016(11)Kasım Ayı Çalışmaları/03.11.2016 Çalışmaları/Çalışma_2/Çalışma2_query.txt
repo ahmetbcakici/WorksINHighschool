@@ -1,0 +1,31 @@
+create database sirket;
+use sirket;
+
+create table cari(
+cari_id int identity(1,1)primary key,
+cari_adi varchar(25) not null,
+adres varchar(50) not null,
+telno char(10) not null);
+
+create table urun(
+urun_id int identity(1,1)primary key,
+urun_adi varchar(20) not null,
+fiyat decimal(7,2) not null);
+
+create table alim(
+alim_id int identity(1,1)primary key,
+cari_id int,
+urun_id int,
+tarih date,
+miktar smallint,
+constraint fk_cari foreign key (cari_id) references cari(cari_id),
+constraint fk_urun foreign key (urun_id) references urun(urun_id));
+
+create table satis(
+satis_id int identity(1,1)primary key,
+cari_id int,
+urun_id int,
+tarih date,
+miktar smallint,
+constraint fk_cariforsatis foreign key (cari_id) references cari(cari_id),
+constraint fk_urunforsatis foreign key (urun_id) references urun(urun_id));

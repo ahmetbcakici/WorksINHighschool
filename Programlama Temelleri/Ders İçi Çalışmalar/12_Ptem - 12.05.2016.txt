@@ -1,0 +1,55 @@
+            /*
+             * Ör: Klavyeden 10 adet sayý girilmektedir. 
+
+a-	Bu sayýlarý ilk önce hazýr metot kullanarak sýralayýp dizi1 olarak kaydedin.(küçükten Büyüðe)
+b-	Bu sayýlarý büyükten küçüðe sýralayýnýz ve dizi2 olarak kaydedin.(hazýr metotlar kullanýlacak)
+c-	Dizi2 üzerinde kullanýcýnýn istediði indisten baþlayarak istediði sayý kadar eleman silinecektir.
+d-	Dizi2 de silme iþleminden sonra kaç adet kullanýcýnýn giridiði sayý kaldý?
+e-	Dizi1 içinde 5 sayýsýnýn kaçýncý indiste bulunduðunu ya da bulunmadýðýný gösterin
+f-	Dizi1 içinde 5 sayýsý bulunduysa silin.
+g-	Dizi1 içinde kullanýcýnýn girdiði sayýnýn kaçýncý indiste bulunduðunu ya da bulunmadýðýný gösterin varsa silin.*/
+
+
+            int girilen =0;
+            int[] dizi1 = new int[4];
+            for (int i = 0; i < dizi1.Length; i++) 
+            {
+                Console.Write("{0}. indis'e deðer giriniz:",i);
+                girilen = Convert.ToInt16(Console.ReadLine());
+                dizi1[i] = girilen;
+            }
+            Console.WriteLine("------------------------------");
+            Array.Sort(dizi1);
+            for (int i = 0; i < dizi1.Length; i++)
+            {
+                Console.WriteLine("Dizinin {0} sayýsý = {1}",i,dizi1[i]);                
+            }
+            Console.WriteLine("------------------------------");
+            Array.Reverse(dizi1);
+            for (int i = 0; i < dizi1.Length; i++)
+            {
+                Console.WriteLine("Dizinin {0} sayýsý = {1}", i, dizi1[i]);
+            }
+            Console.WriteLine("------------------------------");
+            Console.Write("Silmeye baþlamak istediðiniz indis sayýsýný giriniz:");
+            int indissayisi = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Silmek istediðiniz eleman sayýsýný giriniz:");
+            int silinecekelemansayisi = Convert.ToInt16(Console.ReadLine());
+            Array.Clear(dizi1, indissayisi, silinecekelemansayisi);
+            Console.WriteLine("------------------------------");
+            int indeks = Array.IndexOf(dizi1, 5);
+            if (indeks > -1)
+            {
+                Console.WriteLine("{0}. indeks'te bulundu",indeks);
+                Array.Clear(dizi1, indeks, 1);
+            }
+            else
+            {
+                Console.WriteLine("Bulunamadý");
+            }
+            for (int i = 0; i < dizi1.Length ; i++)
+            {
+
+                Console.WriteLine("Dizinin {0} indeksi = {1}",i,dizi1[i]);
+            }
+            Console.ReadKey();

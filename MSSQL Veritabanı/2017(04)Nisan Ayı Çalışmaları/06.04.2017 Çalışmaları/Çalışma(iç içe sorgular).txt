@@ -1,0 +1,16 @@
+--2 numaralý bölümde çalýþan herhangi bir personelden daha fazla ücret alan personellerin ad soyad bölümno ve ücretini listele.
+select ad,soyad,bolumno,ucret from personel 
+
+--2 ve 3 numaralý bölümlerde çalýþan personellerin tümünden daha az maaþ alan personellerin bilgilerini listele
+select * from personel where maas < all(select maas from personel where bolumno=2 or bolumno=3)
+
+--pazarlama ve arge bölümünde çalýþan personellerin tümünden daha az maaþ alan personellerin bilgilerini listele
+select * from personel where maas < all(select maas from personel where bolumno in(select bolumno from bolum where bolumad = 'Pazarlama' or bolumad = 'Arge'))
+
+--Ürün almamýþ müþterileri listele.
+--Bugün satýþ yapmamýþ personelleri listele.
+--Satýþ ve muhasebe bölümünde çalýþanlarý listele.
+--Bugün yapýlan satýþlarýn ortalama ücretinden fazla yapýlan satýþlardaki ürünlerin adýný listele.
+--Satýþ bölümünde çalýþan 2015 yýlýndan önce iþe baþlamýþ personellerin hepsinden daha az ücret alanlarý listele.
+--Pazarlama bölümünde çalýþan personellerden herhangi birinden daha az maaþ alanlarý listele.
+--Bugün yapýlan satýþlardan tutar olarak en yükseðini alan müþterinin ad,soyad'ýný listele.

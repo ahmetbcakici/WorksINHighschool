@@ -1,0 +1,49 @@
+*****
+*****
+*****
+*****
+*****ÇIKTISI VEREN PROGRAMI YAZ         
+            string y = "*";
+            for (int i = 1; i <= 5;i++)
+            {
+                
+                for (int j = 1; j <= 5;j++)
+                {
+                    Console.Write(y);
+                    
+                }
+                Console.Write("\n");
+            }
+            Console.ReadKey();
+----------------------------------------------------------------------------
+*
+**
+***
+****
+***** ÇIKTISI VEREN PROGRAMI YAZ
+            string y = "*";
+            for (int i = 1; i <= 5; i++)
+            {
+                for (int j = 1; j <= i;j++)
+                {                    
+                    Console.Write(y);                    
+                }
+                Console.Write("\n");
+            }
+            Console.ReadKey();
+----------------------------------------------------------------------------
+*****
+****
+***
+**
+* çýktýsý veren programý yaz
+            string y = "*";
+            for (int i = 5; i >=0; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(y);
+                }
+                Console.Write("\n");
+            }
+----------------------------------------------------------------------------

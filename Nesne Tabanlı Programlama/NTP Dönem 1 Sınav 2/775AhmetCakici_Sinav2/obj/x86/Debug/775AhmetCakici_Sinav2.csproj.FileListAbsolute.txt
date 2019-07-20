@@ -1,0 +1,9 @@
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\bin\Debug\775AhmetCakici_Sinav2.exe
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\bin\Debug\775AhmetCakici_Sinav2.pdb
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\obj\x86\Debug\_775AhmetCakici_Sinav2.Form1.resources
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\obj\x86\Debug\_775AhmetCakici_Sinav2.Properties.Resources.resources
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\obj\x86\Debug\775AhmetCakici_Sinav2.exe
+c:\users\öğrenci10\documents\visual studio 2010\Projects\775AhmetCakici_Sinav2\775AhmetCakici_Sinav2\obj\x86\Debug\775AhmetCakici_Sinav2.pdb

@@ -1,0 +1,16 @@
+select ABS(1-5)  {4}
+
+select CEILING(1.1) {2}
+
+select FLOOR(1.9) {1}
+
+select ROUND(1.5,0) {2}
+
+select SQUARE(7)  {49}
+
+SELECT SQRT(49)   {7}
+
+select POWER(2,3)  {8}
+
+
+

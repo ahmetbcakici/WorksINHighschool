@@ -1,0 +1,83 @@
+            //Her öðrencinin 2 notu vardýr toplamda 4 öðrenci olmaktadýr.
+            int toplam =0,tumtoplam=0;
+            for (int i = 1; i <= 4; i++)
+            {
+                for (int j = 1; j <= 2; j++)
+                {
+                    Console.Write("{0} öðrencinin {1}. notunuzu giriniz:", i, j);
+                    int not = Convert.ToInt16(Console.ReadLine());
+                    toplam += not;
+                }
+                tumtoplam = tumtoplam + (toplam / 2);
+                Console.WriteLine("{0}. öðrencinin notlarý ortu = {1}", i, toplam / 2);
+                toplam = 0;
+            }
+            Console.WriteLine("Sýnýf oralamasý = {0}",tumtoplam/4);
+            Console.ReadKey();
+----------------------------------------------------------------------
+            int i = 1;
+            while (i <= 10)
+            {
+                Console.WriteLine("Merhaba Dünya");
+                i++;
+            }
+            Console.ReadKey();
+----------------------------------------------------------------------
+            //1 den 50 ye kadar tek sayýlarý yan yana while döngüsüyle yaz.
+            int i = 1;
+            while (i <= 50)
+            {
+                Console.Write(i);
+                i+=2;
+            }
+            Console.ReadKey();
+----------------------------------------------------------------------
+            //0 dan 20 ye kadar olan çift sayýlarý ekrana yaz
+            int i = 0;
+            while (i <= 20)
+            {
+                Console.Write(i);
+                i+=2;
+            }
+            Console.ReadKey(); 
+----------------------------------------------------------------------
+            //0 ile 100 arasý sayýlardan tekleri ayrý ve çift sayýlarýn toplamlarýný ayrý bularak ekranda göster
+            int i = 0, tektop = 0, ciftop = 0;
+            while (i <= 100)
+            {
+                if ((i % 2) == 1)
+                {
+                    tektop += i;
+                }
+                else if ((i % 2) == 0) 
+                {
+                    ciftop += i;
+                }
+                i++;
+            }
+            Console.WriteLine("Teklerin toplamý {0} Çiftlerin toplamý {0} ", tektop, ciftop);
+----------------------------------------------------------------------
+            //Sayýnýn faktöriyelini hesaplayan prog yaz.
+            int faktoriyel = 1;
+            Console.Write("Sayý gir:");
+            int i = Convert.ToInt16(Console.ReadLine());
+            while (i > 1) 
+            {
+                faktoriyel = faktoriyel * i;
+                i--;
+            }
+            Console.WriteLine("Sayýnýn faktoriyeli {0}",faktoriyel);
+            Console.ReadKey();
+----------------------------------------------------------------------
+            //Sayýnýn faktöriyelini hesaplayan prog yaz.
+            int faktoriyel = 1, a=1;            
+            Console.Write("Sayý gir:");
+            int i = Convert.ToInt16(Console.ReadLine());
+            while (a <= i) 
+            {
+                faktoriyel = faktoriyel * a;
+                a++;
+            }
+            Console.WriteLine("Sayýnýn faktoriyeli {0}",faktoriyel);
+            Console.ReadKey();
+----------------------------------------------------------------------

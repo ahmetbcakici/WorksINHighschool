@@ -1,0 +1,21 @@
+Klavyeden girilen baþlangýç ve bitiþ deðerleri arasýndaki çarpým 
+tablolarýný tersten ekrana yazdýran prog yaz.
+
+
+            int carpim =0;
+            Console.Write("Baþlangýç deðeri girin:");
+            int basla = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Bitiþ deðeri girin:");
+            int son = Convert.ToInt16(Console.ReadLine());
+            for (int i = basla; i <= son; i++)
+            {
+                Console.WriteLine("{0} ler",i);
+                for (int j = 10; j>= 1; j--) 
+                {
+                    
+                    carpim = i*j;
+                    Console.WriteLine("{0} x {1} = {2}", i, j, carpim);
+                }
+                Console.WriteLine("------");
+            }
+            Console.ReadKey();

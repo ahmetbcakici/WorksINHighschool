@@ -1,0 +1,11 @@
+--En yüksek maaþ alan personeli listele
+select ad,soyad from personel where maas=(select MAX(maas) from personel)
+
+--En yüksek maaþ alan kadýn personeli listele
+select ad,soyad from personel where maas=(select MAX(maas) from personel where cinsiyet = 'k')
+
+--Tabloda bulunanlarýn ortalama maaþýndan yüksek maaþa sahip personeli listele
+select ad,soyad from personel where maas>(select AVG(maas) from personel)
+
+--En yüksek maaþ alan kadýnýn yaþadýðý ilde yaþayanlarý listele.
+select ad,soyad from personel where il=(select il from personel where maas = select MAX(maas) rom personel where cinsiyet = 'k'))

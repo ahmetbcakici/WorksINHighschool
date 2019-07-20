@@ -1,0 +1,104 @@
+Soru : 0 dan klavyeden girilen sayýya kadar olan sayýlarýn toplamýný ekrana yazdýran prog yaz
+
+            int sayi, toplam = 0;                
+            Console.WriteLine("Sayý gir:");
+            sayi = Convert.ToInt16(Console.ReadLine());
+            for (int i = 0; i <= sayi; i++)
+            {
+                toplam = i + sayi;  
+                    
+            }
+            Console.WriteLine(toplam);
+            Console.ReadKey();
+-------------------------------------------------------------------------------------
+soru : a dan z ye kadar olan sayýlarý ekrana yazdýrýn for döngüsü ile
+
+            char i;
+            for (i = 'a'; i <= 'z'; i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
+-------------------------------------------------------------------------------------
+soru : 0 dan klavyeden girilen sayýya kadar olan çift sayýlarýn toplamýný yazdýrýn
+
+
+            int i, sayi, toplam = 0;
+            Console.Write("Sayý giriniz:");
+            sayi = Convert.ToInt16(Console.ReadLine());
+            for (i = 0; i <= sayi; i +=2)                
+            {
+                toplam = toplam + i;              
+
+
+            }
+            Console.WriteLine(toplam);
+            Console.ReadKey();
+
+-------------------------------------------------------------------------------------
+Soru: 0 dan klavyeden girilen sayýya kadar olan tek sayýlarýn toplamýný yazdýrýn(Mod ile)
+
+            int i, sayi = 0, sonuc = 0;
+            Console.Write("Sayý girin:");
+            sayi = Convert.ToInt16(Console.ReadLine());
+            for (i = 0; i <= sayi; i++)
+            {
+                if ((i % 2 == 1))
+                {
+                    sonuc = sonuc + i;
+                }                
+            }
+            Console.WriteLine(sonuc);
+            Console.ReadKey();            
+-------------------------------------------------------------------------------------
+            //Soru: 1 den girilen sayýya kadar 7 ye tam bölünen sayýlarý 
+            //sayan toplamlarýný hesaplayan ve bu sayýlarý ekrana yazdýran prog
+
+            int sonuc = 0, sayi, sayac =0;
+            Console.Write("Sayý girin:");
+            sayi = Convert.ToInt16(Console.ReadLine());
+
+            for (int i = 0; i <= sayi; i++)
+            {
+                if (i % 7 == 0)
+                {
+                    sonuc = sonuc + i;
+                    sayac++;
+                    
+                }
+
+
+            }
+            Console.WriteLine("Sayaç : {0} Toplam {1}", sayac, sonuc);
+            Console.ReadKey();
+------------------------------------------------------------------------------------
+            //Soru : Baþlangýç ve bitiþ deðerleri kalvyeden girilecek  bu aralýktaki
+            // çift ve tek sayýlarýn toplamýný ayrý deðiþkenlerde toplayan prog.yaz
+            // (Toplam deðiþkenleri : çifttoplam,tektoplam)
+            
+            
+            int cifttoplam = 0, tektoplam = 0;
+            Console.Write("Baþlangýc deðeri giriniz:");
+            int baslangic = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Bitiþ deðeri giriniz:");
+            int bitis = Convert.ToInt16(Console.ReadLine());
+            for (int i = baslangic;i <= bitis;i++)
+            {
+                if (i % 2 == 0)
+                {
+                    cifttoplam += i;
+                }
+                else
+                {
+                    tektoplam += i;
+                }
+
+            }
+
+            Console.WriteLine("Tek sayýlarýn toplamý {0} çift sayýlarýn toplamý {1}",tektoplam,cifttoplam);
+            Console.ReadKey();
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------

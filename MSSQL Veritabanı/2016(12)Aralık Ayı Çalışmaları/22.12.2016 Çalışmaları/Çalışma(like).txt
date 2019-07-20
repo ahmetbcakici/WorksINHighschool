@@ -1,0 +1,32 @@
+--Öðrenci tablosundaki Beylikdüzünde yaþayanlarý listele.
+select * from ogrenci where ilce like '%Beylikdüzü%'
+
+--Öðrenci tablosundan adý A ile baþlayanlarý listele.
+select * from ogrenci where ad like 'A%'
+
+--Adýnýn içinde T harfi olanlarý listele.
+select * from ogrenci where ad like '%T%'
+
+--Ürünler tablosundaki 2.karakteri b olan ürünleri listele.
+select * from ogrenci where urunad like '_b%'
+
+--Ürün adýnýn 5. hrfi k sondan 3. harfi a ve sondan 4. harfi s olanlarý listele.
+select * from ogrenci where urunad like '____k%sa__'
+
+--3. harfi c veya k olan isimleri listele.
+select * from ogrenci where ad like '__[ck]%'
+
+--Personel tablosundaki ilk harfi a||b||c olan bölümleri listele.
+select * from personel where bolum like '[a_c]%'
+
+--3.harfi s ile v arasýnda olan sondan 2. ve 3. harfi in olan tüm 9 karakterlileri listele.
+select * from ogrenci where ad like '__[s-v]___in_'
+
+--m harfi ile baþlayýp 2. harfi c olmayanlarý listele.
+select * from ogrenci where ad like 'm[^c]%'
+
+--2. harfi e olan 5. harfi a t aralýðý olmayan isimleri listele.
+select * from ogrenci where ad like '_e__[^a-t]%'
+
+--Ýsmi a ile baþlayan sondan 3. harfi c-f arasýnda olan ve adý t ile baþlayan son harfi k-n arasýndan olmayanlardan 98 doðumlularý listele.
+select * from ogrenci where ad like 'a%[c-f]__' and (ad like 't%[^k-n]' and (dogumtarihi >= 1998.01.01 and dogumtarihi <= 1998.12.31))

@@ -1,0 +1,49 @@
+create database sirket;
+use sirket;
+create table personel(id int identity(1,1) primary key,ad varchar(30),soyad varchar(30),yas char(2),cinsiyet char(1),sehir varchar(30),ulke varchar(30),maas decimal(7,2));
+
+insert into personel values ('Ahmet','Yýlmaz','20','E','Ankara','Türkiye','2000');
+insert into personel values ('Mehmet','Efe','22','E','Bolu','Türkiye','2000');
+insert into personel values ('Ayþe','Can','23','B','Ýstanbul','Türkiye',null);
+insert into personel values ('Fatma','Ak','35','B','Ankara','Türkiye','3200');
+insert into personel values ('John','Smith','45','E',null,'USA','3000');
+insert into personel values ('Ellen','Smith','40','B','New York','USA','3500');
+insert into personel values ('Hans','Müller','30','E','Berlin','Almanya','4000');
+insert into personel values ('Frank','Cesanne','35','E',null,'Fransa',null);
+insert into personel values ('Abbas','Demir','26','E','Adana','Türkiye','2000');
+insert into personel values ('Hatice','Topçu','26','B',null,'Türkiye','2200');
+insert into personel values ('Gülsüm','Demir','35','B','Adana','Türkiye','2000');
+
+--Maaþ alanýndaki bilgilerden “Türkiye” de yaþayanlara %10 ilave eden güncellemeyi yapýnýz
+update personel set maas+=maas*10/100 where ulke = 'Türkiye'
+--Cinsiyeti Erkek olan personelin tüm bilgilerini listeleyiniz.
+select * from personel where cinsiyet = 'E'
+--Cinsiyeti Bayan olan personelin tüm bilgilerini listeleyiniz.
+select * from personel where cinsiyet = 'B'
+--Ad,Soyad,Mail alaný listeleyin. (Mail adsoyad@hotmail.com);
+select ad,soyad,ad+''+soyad+'@hotmail.com' from personel
+--Maaþý 2000 ile 3500 arasýnda olan personel bilgilerini listeleyiniz.
+select * from personel where maas between '2000' and '3500'
+--Maaþý 2000,3000 ve 4000 olan personel bilgilerini listeleyiniz.
+select * from personel where maas in('2000','3000','4000')
+--Maaþ bilgisi girilmeyen kayýtlarýn ad,soyad,ülke bilgilerini listeleyiniz.
+select ad,soyad,ulke from personel where maas is null
+--Þehir alaný girilmemiþ kiþilerden yaþý 30’dan büyük olanlarý listeleyin.
+select * from personel where sehir is null and yas > 30
+--Maaþý 2500’den yüksek erkek personelin maaþýný %25 arttýrýn.
+update personel set maas+=maas*25/100 where maas > 2500 and cinsiyet = 'E'
+--Ýstanbul’da yaþayan ve maaþ alaný boþ geçilmiþ kiþileri silin.
+delete from personel where sehir = 'Ýstanbul' and maas is null
+--Tarih alanýný ekleyin.
+alter table personel add tarih date
+--Türkiye’de yaþayan kiþilerin tarih alanýný 13.01.2017 olarak güncelleyin
+update personel set tarih = '2017.01.13' where ulke = 'Türkiye'
+--Tarih alaný boþ alan 40 yaþýndan büyük kiþileri silin.
+delete from personel where tarih is null and yas > 40
+--Tarih alaný boþ olan kiþilerin tarih alanýný 01.12.2016 olarak güncelleyin.
+update personel set tarih = '2016.12.01' where tarih is null
+--Ýsmi “A” ile baþlayan kayýtlarýn tüm bilgilerini listeleyiniz.
+select * from personel where ad like'A%'
+
+select*from personel
+

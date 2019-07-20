@@ -1,0 +1,5 @@
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru2\soru2\bin\Debug\soru2.exe
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru2\soru2\bin\Debug\soru2.pdb
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru2\soru2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru2\soru2\obj\Debug\soru2.exe
+C:\Users\ogrenci21\Desktop\775_AhmetBuğraÇakıcı\soru2\soru2\obj\Debug\soru2.pdb

@@ -1,0 +1,95 @@
+            //Girilen gün adýnýn haftanýn kaçýncý günü oldugunu bulan prog.
+            string[] hafta = new string[7] { "Pazartesi", "Salý", "Çarþamba", "Perþembe", "Cuma", "Cumartesi", "Pazar" };
+            Console.WriteLine("Gün adý giriniz:");
+            string girilen = Console.ReadLine();
+            for (int i = 0; i <=hafta.Length; i++)
+            {
+                if (girilen == hafta[i])
+                {
+                    Console.WriteLine("Girdiðiniz gün haftanýn {0}. günüdür",i+1);
+                    break;
+                }                
+            }          
+            Console.ReadKey();
+---------------------------------------------------------------------------------------------------------------------
+            //Önceden tanýmlanmýþ ve doldurulmuþ bir dizi içinde kulanýcýnýn girdiði sayýnýn olup
+            //olmadýgýný varsa da kaç adet oldugunu bulan prog yaz.
+            int[] dizi = new int[] { 1, 10, 35, 23, 50, 90, 12,1 };
+            int sayac = 0;
+            Console.Write("Sayý girin:");
+            int girilen = Convert.ToInt16(Console.ReadLine());
+            for (int i = 0; i < dizi.Length; i++) 
+            {
+                if (girilen == dizi[i])
+                {
+                    sayac++;                    
+                }            
+            }
+            if (sayac == 0)
+            {
+                Console.WriteLine("Dizide bulunamadý");
+            }
+            else
+            {
+                Console.WriteLine("Dizide {0} kez bulundu",sayac);
+            }
+            Console.ReadKey();
+---------------------------------------------------------------------------------------------------------------------
+            //Kullanýcýdan alýnan metin içindeki sesli harf sayýsýný bulan prog.yaz
+            char[] sesliharfler = { 'a', 'e', 'ý', 'i', 'o', 'ö', 'u', 'ü' };
+            int sayac = 0;
+            Console.WriteLine("Metin giriniz:");
+            string girilen = Console.ReadLine();
+            for (int i = 0; i < sesliharfler.Length; i++)
+            {
+                for (int j = 0; j < girilen.Length; j++)
+                {
+                    if (girilen[j] == sesliharfler[i])
+                    {
+                        sayac++;
+                    }
+                }
+            }
+            if (sayac == 0)
+            {
+                Console.WriteLine("Girdiðiniz metinde hiç sesli harf bulunmamaktadýr.");
+            }
+            else
+            {
+                Console.WriteLine("Girdiðiniz metinde {0} sesli harf bulunmaktadýr.", sayac);
+            }            
+            Console.Read();
+---------------------------------------------------------------------------------------------------------------------
+            //Kullanýcý tarafýndan doldurulan dizideki en büyük ve en küçük deðeri
+            //dizi fonksiyonlarýný kullanmadan bulan prog.yaz            
+            int[] dizi = new int[5];
+            for (int i = 0; i < dizi.Length; i++)                 
+            {
+                Console.Write("Dizinin {0}. indexine deðer giriniz:",i);
+                dizi[i] = Convert.ToInt16(Console.ReadLine());
+            }
+            int enbuyuk = dizi[0], enkucuk = dizi[0];
+            for (int i = 0;i < dizi.Length; i++)
+            {
+                if (dizi[i] > enbuyuk) 
+                {
+                    enbuyuk = dizi[i];
+                }
+                if (dizi[i] < enkucuk)
+                {
+                    enkucuk = dizi[i];
+                }
+
+            }
+            Console.WriteLine("Dizideki en büyük sayý = {0}",enbuyuk);
+            Console.WriteLine("Dizideki en küçük sayý = {0}",enkucuk);
+            Console.Read();
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
